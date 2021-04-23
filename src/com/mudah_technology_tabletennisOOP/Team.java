@@ -31,6 +31,10 @@ public class Team {
     }
 
     public String getService() {
+        // untuk tahu service position,
+        // poin firstteam dijumlah denagn secondteam lalu di mod 2
+        // lalu getservice menegasikan nilai true false masing2.
+
         return null;
     }
 }
