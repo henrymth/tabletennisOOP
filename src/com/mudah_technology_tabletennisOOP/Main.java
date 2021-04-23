@@ -1,52 +1,62 @@
 package com.mudah_technology_tabletennisOOP;
 
+import java.io.BufferedReader;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        //score board ready
+        ScoreBoard scoreBoard = new ScoreBoard();
+
+        //game ready
+        Game game = new Game();
         game.ready("table tennis");
 
         //player ready
-        players.ready();
-        players.start();
+        Team firstTeam = new Team();
+        Team secondTeam = new Team();
+        firstTeam.ready();
+        firstTeam.setName("Xin Hua");
+        secondTeam.ready();
+        secondTeam.setName("Bobrow");
 
         //ball ready
+        Ball ball = new Ball();
         ball.ready();
-        ball.start();
 
         //game start
         game.start(1);
 
         //scenario player 11 win, player2 oly 2 points
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        secondTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
+        scoreBoard.display(firstTeam,secondTeam);
 
-        players.player(2).gotPoint();
+        secondTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(2).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        players.player(1).gotPoint();
+        firstTeam.gotPoint();
 
-        ball.end();
-        players.end();
-        game.end(1);
-
+        game.end();
+        scoreBoard.display(firstTeam,secondTeam);
     }
 }
