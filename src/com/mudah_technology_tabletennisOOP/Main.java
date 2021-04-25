@@ -23,10 +23,7 @@ public class Main {
         secondTeam.setName("Bobrow");
         secondTeam.setService("");
 
-        //System.out.println("jika total points = 1, maka "  + firstTeam.getService(1));
-        //System.out.println("test mod operator " + 1%2 + "; " + 2%2 + "; " + 3%2);
-
-        //ball ready
+          //ball ready
         Ball ball = new Ball();
         ball.ready();
 
@@ -73,9 +70,7 @@ public class Main {
         firstTeam.gotPoint();
         scoreBoard.display(firstTeam,secondTeam);
 
-
         game.end();
         scoreBoard.display(firstTeam,secondTeam);
-        scoreBoard.displayWinner(firstTeam,secondTeam);
     }
 }
