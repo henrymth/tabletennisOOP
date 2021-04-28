@@ -72,5 +72,8 @@ public class Main {
 
         game.end();
         scoreBoard.display(firstTeam,secondTeam);
+
+        //keluarin matris
+        game.gameBoard();
     }
 }
