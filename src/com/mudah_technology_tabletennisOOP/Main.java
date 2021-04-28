@@ -74,6 +74,20 @@ public class Main {
         scoreBoard.display(firstTeam,secondTeam);
 
         //keluarin matris
-        game.gameBoard();
+        System.out.println("ngasal dulu");
+
+        for (int i=0; i<7; i++) {
+            System.out.print(game.gameBoard()[0][i] + " |");
+
+        }
+
+        for (int i=0; i<7; i++) {
+            System.out.print(game.gameBoard()[1][i] + " |");
+            //System.out.print(game.gameBoard()[2][i] + " |");
+        }
+
+        for (int i=0; i<7; i++) {
+            System.out.print(game.gameBoard()[2][i] + " |");
+        }
     }
 }

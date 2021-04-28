@@ -24,6 +24,7 @@ public class Game {
     }
 
     public int[][] gameBoard (){
+        int[][] gameScore = new int[3][7];
         gameScore[0][0]= 1;
         gameScore[1][0]= 11;
         gameScore[2][0]= 2;
